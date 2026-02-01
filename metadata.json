@@ -1,0 +1,7 @@
+{
+  "name": "Nova Business Suite",
+  "description": "A modern, professional 3-page business website template featuring a clean layout, responsive design, and an integrated Gemini-powered AI business assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
