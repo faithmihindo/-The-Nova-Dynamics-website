@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { BUSINESS_NAME, BUSINESS_ADDRESS, BUSINESS_EMAIL } from '../constants';
-import { Page } from '../types';
+import { BUSINESS_NAME, BUSINESS_ADDRESS, BUSINESS_EMAIL } from '../constants.tsx';
+import { Page } from '../types.ts';
 
 interface FooterProps {
   onPageChange: (page: Page) => void;

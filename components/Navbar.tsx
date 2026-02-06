@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { Page } from '../types';
-import { BUSINESS_NAME } from '../constants';
+import { Page } from '../types.ts';
+import { BUSINESS_NAME } from '../constants.tsx';
 
 interface NavbarProps {
   currentPage: Page;

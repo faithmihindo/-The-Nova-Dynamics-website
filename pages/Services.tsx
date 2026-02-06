@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SERVICES, Icon } from '../constants';
+import { SERVICES, Icon } from '../constants.tsx';
 
 const Services: React.FC = () => {
   return (

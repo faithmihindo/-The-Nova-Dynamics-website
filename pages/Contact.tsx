@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { BUSINESS_ADDRESS, BUSINESS_EMAIL } from '../constants';
+import { BUSINESS_ADDRESS, BUSINESS_EMAIL } from '../constants.tsx';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });

@@ -1,6 +1,6 @@
 
 import { GoogleGenAI } from "@google/genai";
-import { BUSINESS_NAME, SERVICES } from "../constants";
+import { BUSINESS_NAME, SERVICES } from "../constants.tsx";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 

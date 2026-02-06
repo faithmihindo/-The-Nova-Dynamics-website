@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Page } from '../types';
-import { SERVICES, BUSINESS_NAME, Icon } from '../constants';
+import { Page } from '../types.ts';
+import { SERVICES, BUSINESS_NAME, Icon } from '../constants.tsx';
 
 interface HomeProps {
   onPageChange: (page: Page) => void;

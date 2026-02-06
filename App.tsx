@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ChatWidget from './components/ChatWidget';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import { Page } from './types';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import ChatWidget from './components/ChatWidget.tsx';
+import Home from './pages/Home.tsx';
+import Services from './pages/Services.tsx';
+import Contact from './pages/Contact.tsx';
+import { Page } from './types.ts';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>(Page.Home);
