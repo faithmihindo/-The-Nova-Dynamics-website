@@ -1,14 +1,22 @@
 
 import { GoogleGenAI } from "@google/genai";
-import { BUSINESS_NAME, SERVICES } from "../constants.tsx";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const apiKey = (process.env.GEMINI_API_KEY || process.env.API_KEY) as string;
+const ai = new GoogleGenAI({ apiKey });
+
+const BUSINESS_NAME = "Nova Business Suite";
+const SERVICES = [
+  "Strategic Consulting",
+  "Digital Transformation",
+  "Cloud Infrastructure",
+  "AI Integration"
+];
 
 const SYSTEM_INSTRUCTION = `
 You are the official AI Assistant for ${BUSINESS_NAME}.
-Our services include: ${SERVICES.map(s => s.title).join(', ')}.
+Our services include: ${SERVICES.join(', ')}.
 Your goal is to be professional, helpful, and concise. 
-Help users understand our services, and if they want to contact us, direct them to the Contact page.
+Help users understand our services, and if they want to contact us, direct them to the Contact page (contact.html).
 Always represent the business with high integrity and professionalism.
 `;
 
